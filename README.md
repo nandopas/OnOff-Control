@@ -1,6 +1,8 @@
 # OnOff-Control
 Programming a microcomputer in assembler to control a solenoid through four different modes of operation.
 
+**case3.asm is the main code for this project! Everything else is either helper files or workbook files for the IDE**
+
 ## Mode 1 (indicator LEDs 0001)
 * Press the red button, the solenoid engages.
 * Press the red button again, the solenoid disengages. o Repeats on and off with the red button.
