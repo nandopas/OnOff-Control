@@ -1,12 +1,12 @@
 # OnOff-Control
 Programming a microcomputer in assembler to control a solenoid through four different modes of operation.
 
- Mode 1 (indicator LEDs 0001)
-o Press the red button, the solenoid engages.
-o Press the red button again, the solenoid disengages. o Repeats on and off with the red button.
-o Press the green button and a new mode is entered.
+##Mode 1 (indicator LEDs 0001)
+* Press the red button, the solenoid engages.
+* Press the red button again, the solenoid disengages. o Repeats on and off with the red button.
+*Press the green button and a new mode is entered.
 
- Mode 2 (indicator LEDs 0010)
+##Mode 2 (indicator LEDs 0010)
 o Read the value on the control pot
 o Press the red button, the solenoid engages for 1⁄4 the value of the control pot in
 seconds.
@@ -14,7 +14,7 @@ o Press the red button again before the timing finishes, the timing sequence res
 o After finishing, press the green button to switch to a new mode.
 o If the reading of the A/D converter is 0, a fault is indicated.
 
- Mode 3 (indicator LEDs 0011)
+##Mode 3 (indicator LEDs 0011)
 o Read the value on the control pot
 o Press the red button, the control becomes active.
 o If the value on the A/D converter is greater than 70 hex, the solenoid engages
@@ -24,7 +24,7 @@ o Press the red button again to stop the control.
 o When control is active, the indicator flashes.
 o With control inactive, press the green button to switch to a new mode. o If the reading of the A/D converter is 0, a fault is indicated.
 
- Mode 4 (indicator LEDs 0100)
+##Mode 4 (indicator LEDs 0100)
 o Read the value on the control pot
 o Press the red button, the solenoid engages with the main transistor.
 o As soon as the optical sensor indicates that the solenoid has retracted, turn on the
@@ -43,6 +43,6 @@ o After finishing successfully, press the green button to switch to a new mode.
 o If a fault, the microcomputer has to be reset with the black reset switch (green and
 red buttons are ignored).
 
- Mode 0 and 5 to 7 (indicator LEDs 1xxx where xxx is the mode number)
+##Mode 0 and 5 to 7 (indicator LEDs 1xxx where xxx is the mode number)
 o These modes are errors (they do not exist). The solenoid is disengaged (if it is
 engaged) and the microcomputer has to be reset with the reset switch (green and red buttons are ignored).
